@@ -52,7 +52,8 @@ class GA:
         self.__population = newPop
         self.evaluation()
 
-    def oneGenerationElitism(self):
+    '''
+        def oneGenerationElitism(self):
         newPop = [self.bestChromosome()]
         for _ in range(self.__params['popSize'] - 1):
             p1 = self.__population[self.selection()]
@@ -63,7 +64,7 @@ class GA:
         self.__population = newPop
         self.evaluation()
 
-    def oneGenerationSteadyState(self):
+        def oneGenerationSteadyState(self):
         self.__population = sorted(self.__population, key=lambda x: x.fitness)
         for _ in range(self.__params['popSize']):
             p1 = self.__population[self.selection()]
@@ -74,3 +75,4 @@ class GA:
             if off.fitness < self.__population[-1].fitness:
                 self.__population[-1] = off
         self.evaluation()
+        '''
