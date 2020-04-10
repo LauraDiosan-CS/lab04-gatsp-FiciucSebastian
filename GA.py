@@ -15,6 +15,7 @@ class GA:
             c = self.__params['chromosome'](self.__params)
             self.__population.append(c)
 
+
     def evaluation(self):
         for c in self.__population:
             c.fitness = self.__params['function'](c.repres, self.__params)
