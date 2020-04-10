@@ -31,7 +31,8 @@ def run():
     no_gen = 1000
     # generation_type = 'normal'  # normal/elitism/steady
 
-    run_test(file_name, generation_type, pop_size, no_gen)
+#   run_test(file_name, generation_type, pop_size, no_gen)
+    run_test(file_name, pop_size, no_gen)
 
 
 def modularity(repres, param):
