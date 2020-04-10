@@ -44,7 +44,7 @@ def modularity(repres, param):
     return cost_value
 
 
-def run_test(file_name, generation_type, pop_size, no_gen):
+def run_test(file_name, pop_size, no_gen):
     G = readFile("inputFiles/" + file_name + ".txt")
 
     params = {
